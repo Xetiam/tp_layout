@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.Tp_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bckgrnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_shiba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/purple_200" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin0"
+            android:fontFamily="cursive"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="64dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/margin2"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/welcome_message"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2"
+            android:layout_marginBottom="@dimen/margin3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_image"
+                android:padding="@dimen/margin3"
+                android:src="@drawable/ic_baseline_mail_outline_24" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5"
+                android:background="@drawable/background_edittext"
+                android:fontFamily="sans-serif"
+                android:padding="@dimen/margin3"
+                android:hint="@string/example_mail"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2"
+            android:layout_marginBottom="@dimen/margin3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_image"
+                android:padding="@dimen/margin3"
+                android:src="@drawable/ic_baseline_lock_open_24" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5"
+                android:background="@drawable/background_edittext"
+                android:fontFamily="sans-serif"
+                android:padding="@dimen/margin3"
+                android:hint="@string/example_password"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2"
+            android:layout_marginBottom="@dimen/margin2"
+            android:background="@color/transparentButton"
+            android:fontFamily="sans-serif-black"
+            android:foreground="@drawable/button_border"
+            android:text="@string/button_validate"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin2"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin2"
+                android:layout_marginEnd="@dimen/margin3"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/choice_message"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin3"
+                android:layout_marginEnd="@dimen/margin2"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2"
+            android:background="@color/transparentButton"
+            android:fontFamily="sans-serif-black"
+            android:foreground="@drawable/button_border"
+            android:text="@string/button_create"
+            android:textSize="14dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

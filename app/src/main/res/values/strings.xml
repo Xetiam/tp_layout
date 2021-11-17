@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">tp_layout</string>
+    <string name="title">Postly</string>
+    <string name="welcome_message">Seamless Social Sharing, it\'s that easy !</string>
+    <string name="example_mail">you@yours.com</string>
+    <string name="example_password">Password</string>
+    <string name="button_validate">LOGIN</string>
+    <string name="choice_message">or you can</string>
+    <string name="button_create">CREATE AN ACCOUNT</string>
+</resources>
